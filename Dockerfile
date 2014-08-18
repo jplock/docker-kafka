@@ -12,7 +12,7 @@ ENV KAFKA_HOME /opt/kafka_2.10-0.8.1.1
 
 WORKDIR /opt/kafka_2.10-0.8.1.1
 
-VOLUME /tmp/kafka-logs
+VOLUME ["/tmp/kafka-logs", "/opt/kafka_2.10-0.8.1.1"]
 
 EXPOSE 9092
 
